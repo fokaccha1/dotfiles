@@ -31,7 +31,8 @@ filetype indent on
 NeoBundleLazy 'davidhalter/jedi-vim', {'autoload' : {'filetypes' : ['python', 'python3']}}
 NeoBundleLazy 'vim-scripts/ruby-matchit', {'autoload' : {'filetypes' : 'ruby'}}
 NeoBundleLazy 'dag/vim2hs', {'autoload' : {'filetypes' : 'haskell'}}
-NeoBundleLazy "eagletmt/ghcmod-vim", {'autoload' : {'filetypes' : 'haskell'}}
-NeoBundleLazy "ujihisa/neco-ghc", {'autoload' : {'filetypes' : 'haskell'}}
-NeoBundleLazy "jelera/vim-javascript-syntax", {'autoload' : {'filetypes' : 'javascript'}}
-NeoBundleLazy 'kchmck/vim-coffee-script', {'autoload': {'filetypes': ['coffee']}}
+NeoBundleLazy 'eagletmt/ghcmod-vim', {'autoload' : {'filetypes' : 'haskell'}}
+NeoBundleLazy 'ujihisa/neco-ghc', {'autoload' : {'filetypes' : 'haskell'}}
+NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload' : {'filetypes' : 'javascript'}}
+NeoBundleLazy 'kchmck/vim-coffee-script', {'autoload' : {'filetypes' : ['coffee']}}
+NeoBundleLazy 'derekwyatt/vim-scala', {'autoload' : {'filetypes' : 'scala'}}
