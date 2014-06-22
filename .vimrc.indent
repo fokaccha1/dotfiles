@@ -1,0 +1,34 @@
+"###############################################################
+" インデントの設定
+"###############################################################
+
+"オートインデント{"
+set expandtab
+set ts=2 sw=2 sts=2
+set autoindent
+set smartindent
+set cindent         "C言語スタイルのインデント機能が有効になる
+"}
+
+if has("autocmd")
+  "ファイルタイプの検索を有効に
+  filetype plugin on
+  "ファイルタイプに合わせたインデントを利用する
+  filetype indent on
+  autocmd FileType c          setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType cpp        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType java       setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType javascript setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType php        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType python     setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType ruby       setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType haml       setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType sh         setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType sql        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType vim        setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType xml        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType yaml       setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType zsh        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType scala      setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType haskell    setlocal sw=4 sts=4 ts=4 et
+endif

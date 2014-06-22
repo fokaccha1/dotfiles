@@ -10,13 +10,8 @@ source ~/dotfiles/.vimrc.apperance
 source ~/dotfiles/.vimrc.encoding
 "color関連
 source ~/dotfiles/.vimrc.colors
-
-"オートインデント{"
-set expandtab
-set ts=2 sw=2 sts=2
-set autoindent
-set smartindent
-"}
+"インデント関連
+source ~/dotfiles/.vimrc.indent
 
 "vim-indent-guides関連{
 let g:indent_guides_enable_on_vim_startup=1
