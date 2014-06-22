@@ -4,18 +4,8 @@ scriptencoding utf-8
 source ~/dotfiles/.vimrc.bundle
 "Vimの基本設定
 source ~/dotfiles/.vimrc.basic
-
-"表示関連{
-set list "不可視文字の可視化
-set number "行番号表示
-set wrap "長いテキストの折り返し
-set textwidth=0 "自動的に改行が入るのを無効化
-"デフォルト不可視文字をUnicodeで綺麗に
-set listchars=tab:\ \ ,trail:-,extends:»,precedes:«,nbsp:%,eol:↲
-
-"カラースキーム"
-set background=light
-colorscheme desert
+"apperance関連
+source ~/dotfiles/.vimrc.apperance
 
 "エンコーディング"
 set encoding=utf-8
@@ -30,8 +20,7 @@ set expandtab
 set ts=2 sw=2 sts=2
 set autoindent
 set smartindent
-set ruler
-"}}
+"}
 
 "vim-indent-guides関連{
 let g:indent_guides_enable_on_vim_startup=1

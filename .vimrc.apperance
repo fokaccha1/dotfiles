@@ -1,0 +1,16 @@
+"###############################################################
+" 見た目の設定
+"###############################################################
+
+"表示関連{
+set list         "不可視文字の可視化
+set number       "行番号表示
+set wrap         "長いテキストの折り返し
+set textwidth=0  "自動的に改行が入るのを無効化
+"デフォルト不可視文字をUnicodeで綺麗に
+set listchars=tab:\ \ ,trail:-,extends:»,precedes:«,nbsp:%,eol:↲
+set ruler        "行番号をステータスバーに表示
+"カラースキーム{
+set background=light
+colorscheme desert
+"}}
