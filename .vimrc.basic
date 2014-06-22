@@ -1,0 +1,21 @@
+"###############################################################
+" 基本設定
+"###############################################################
+
+set mouse=n           "ノーマルモードでマウスを使えるようにする
+set updatetime=180    "vimの処理タイミングを制御
+set clipboard=unnamed "クリップボード連携"
+set scrolloff=5       "スクロール時の余白確保
+set showmode          "現在のモードを表示する
+set showcmd           "コマンドをステータス行に表示する
+set notitle
+set lazyredraw        "コマンド実行中は再描画しない
+set ttyfast           "ターミナル接続を高速にする
+
+"File関連{"
+set autoread                          "書き換えがあった場合自動で読みなおす
+set hidden                            "編集中でも他のファイルを開けるように
+set noswapfile                        "スワップファイルを作らない
+set nobackup
+autocmd BufWritePre * :%s/\s\+$//ge   "保存時に行末の空白を除去する
+"}

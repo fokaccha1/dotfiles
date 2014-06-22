@@ -2,22 +2,8 @@ scriptencoding utf-8
 
 "bundle.vimでのpluginを読み込む
 source ~/dotfiles/.vimrc.bundle
-
-"ノーマルモードでマウスを使えるようにする
-set mouse=n
-"vimの処理タイミングを制御
-set updatetime=180
-
-"クリップボード連携"
-set clipboard=unnamed
-
-"File関連{"
-set autoread
-set hidden
-set noswapfile
-set nobackup
-autocmd BufWritePre * :%s/\s\+$//ge   "保存時に行末の空白を除去する
-"}
+"Vimの基本設定
+source ~/dotfiles/.vimrc.basic
 
 "表示関連{
 set list "不可視文字の可視化
