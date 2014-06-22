@@ -6,12 +6,8 @@ source ~/dotfiles/.vimrc.bundle
 source ~/dotfiles/.vimrc.basic
 "apperance関連
 source ~/dotfiles/.vimrc.apperance
-
-"エンコーディング"
-set encoding=utf-8
-set fileencoding=utf-8
-"set fileencodings=iso-2022-jp,euc-jp,sjis,latin,utf-8 "文字コード自動認識
-set fileformats=unix,dos,mac "改行コードの自動認識
+"encoding関連
+source ~/dotfiles/.vimrc.encoding
 
 "オートインデント{"
 set expandtab
