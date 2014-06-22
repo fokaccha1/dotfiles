@@ -8,6 +8,8 @@ source ~/dotfiles/.vimrc.basic
 source ~/dotfiles/.vimrc.apperance
 "encoding関連
 source ~/dotfiles/.vimrc.encoding
+"color関連
+source ~/dotfiles/.vimrc.colors
 
 "オートインデント{"
 set expandtab

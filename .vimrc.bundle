@@ -28,7 +28,6 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'itchyny/calendar.vim'
 NeoBundle 'jmcantrell/vim-virtualenv'
 
-syntax on
 filetype plugin on
 filetype indent on
 
