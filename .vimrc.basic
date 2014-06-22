@@ -11,6 +11,7 @@ set showcmd           "コマンドをステータス行に表示する
 set notitle
 set lazyredraw        "コマンド実行中は再描画しない
 set ttyfast           "ターミナル接続を高速にする
+set wildmenu          "コマンドライン補完を便利に
 
 "File関連{"
 set autoread                          "書き換えがあった場合自動で読みなおす

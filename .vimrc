@@ -13,8 +13,6 @@ set fileencoding=utf-8
 "set fileencodings=iso-2022-jp,euc-jp,sjis,latin,utf-8 "文字コード自動認識
 set fileformats=unix,dos,mac "改行コードの自動認識
 
-set wildmenu "コマンドライン補完を便利に
-
 "オートインデント{"
 set expandtab
 set ts=2 sw=2 sts=2
