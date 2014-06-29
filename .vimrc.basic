@@ -20,3 +20,8 @@ set noswapfile                        "スワップファイルを作らない
 set nobackup
 autocmd BufWritePre * :%s/\s\+$//ge   "保存時に行末の空白を除去する
 "}
+
+"行頭行末の左右移動で行をまたぐ{
+set backspace=start,eol,indent
+set whichwrap=b,s,h,l,<,>,[,]
+"}

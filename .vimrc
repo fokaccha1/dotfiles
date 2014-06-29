@@ -12,21 +12,14 @@ source ~/dotfiles/.vimrc.encoding
 source ~/dotfiles/.vimrc.colors
 "インデント関連
 source ~/dotfiles/.vimrc.indent
+"検索関連
+source ~/dotfiles/.vimrc.search
 
 "vim-indent-guides関連{
 let g:indent_guides_enable_on_vim_startup=1
 hi IndentGuidesOdd  ctermbg=white
 hi IndentGuidesEven ctermbg=lightgrey
 let g:indent_guides_guide_size =2
-"行頭行末の左右移動で行をまたぐ{
-set backspace=start,eol,indent
-set whichwrap=b,s,h,l,<,>,[,]
-"}
-
-"検索関連{
-set smartcase
-set incsearch
-"}}
 
 "NERDTree関連{
 let NERDTreeShowHidden=1 "隠しファイルを表示
@@ -92,7 +85,6 @@ let g:lightline = {
 let g:calendar_google_calendar=1
 let g:calendar_goole_task=1
 "}
-"
 
 "Java関連{
 let g:java_highlight_all=1
