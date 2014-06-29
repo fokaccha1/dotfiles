@@ -1,0 +1,14 @@
+"###############################################################
+" ファイル編集の設定
+"###############################################################
+
+"括弧・クオートの自動補完{
+vnoremap { "zdi^V{<C-R>z}<ESC>
+vnoremap [ "zdi^V[<C-R>z]<ESC>
+vnoremap ( "zdi^V(<C-R>z)<ESC>
+vnoremap " "zdi^V"<C-R>z^V"<ESC>
+vnoremap ' "zdi'<C-R>z'<ESC>
+"}
+
+autocmd BufWritePre * :%s/\s\+$//ge "保存時に行末の空白を除去する
+autocmd BufWritePre * :%s/\t/  /ge  "保存時にtabをスペースに変換する

@@ -14,6 +14,8 @@ source ~/dotfiles/.vimrc.colors
 source ~/dotfiles/.vimrc.indent
 "検索関連
 source ~/dotfiles/.vimrc.search
+"ファイル編集関連
+source ~/dotfiles/.vimrc.editing
 
 "vim-indent-guides関連{
 let g:indent_guides_enable_on_vim_startup=1
