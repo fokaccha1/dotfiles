@@ -28,8 +28,8 @@ let g:vimshell_popup_height=40
 let g:vimshell_split_command='tabnew'
 let g:my_vimshell_prompt_counter=-1
 function! s:my_vimshell_dynamic_prompt()
-		let g:my_vimshell_prompt_counter+=1
-	  let anim=[
+    let g:my_vimshell_prompt_counter+=1
+    let anim=[
         \        "|卍♪└(┐✌^o^)✌|",
         \        "|卍^o^)♪└(┐✌^|",
         \        "|└(┐卍^o^)卍♪|",
@@ -40,7 +40,7 @@ function! s:my_vimshell_dynamic_prompt()
         \        "|o^)✌~三^o^))|",
         \        "|┐✌^o^)✌~三^o|",
         \    ]
-	  return anim[g:my_vimshell_prompt_counter % len(anim)]
+    return anim[g:my_vimshell_prompt_counter % len(anim)]
 endfunction
 let g:vimshell_prompt_expr='g:my_vimshell_dynamic_prompt()." > "'
 let g:vimshell_prompt_pattern='^|[ 卍♪└(┐✌o^)~三]\{10,11}| > '
@@ -56,6 +56,11 @@ inoremap <expr><C-g> neocomplete#undo_completion()
 inoremap <expr><C-l> neocomplete#complete_common_string()
 "}}
 
+"calendar.vim関連{
+let g:calendar_google_calendar=1
+let g:calendar_goole_task=1
+"}
+
 "lightline関連{
 set laststatus=2
 set t_Co=256 "環境によって上手くいかないのでシェルコマンド'export TERM=xterm-256color'と併用
@@ -67,9 +72,7 @@ let g:lightline = {
       \ 'separator': { 'left': '＞', 'right': '＜' },
       \ 'subseparator': { 'left': '＞', 'right': '＜' }
       \ }
+hi clear CursorLine "colorschemeの変更のためここでカーソル行の下線取り消し
+hi CursorLineNr term=bold ctermfg=Blue "カーソル行の行番号をハイライト
 "}
 
-"calendar.vim関連{
-let g:calendar_google_calendar=1
-let g:calendar_goole_task=1
-"}

@@ -13,4 +13,6 @@ set ruler        "行番号をステータスバーに表示
 "カラースキーム{
 set background=light
 colorscheme desert
+"行番号のハイライト
+set cursorline "行番号をハイライトするのに必要
 "}}
