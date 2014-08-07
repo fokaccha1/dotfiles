@@ -2,12 +2,18 @@
 " NeoBundleプラグインの管理
 "###############################################################
 
+"go関連のプラグイン{
+if $GOROOT!=''
+  set runtimepath+=$GOROOT/misc/vim
+endif
+"}
+
 "Vi互換モードをオフ(Vim拡張機能を有効)"
 set nocompatible
 if has('vim_starting')
-	  filetype plugin off
-		filetype indent off
-	  execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
+    filetype plugin off
+    filetype indent off
+    execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
 endif
 call neobundle#rc(expand('~/.vim/bundle'))
 
