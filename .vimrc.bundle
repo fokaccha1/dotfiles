@@ -16,7 +16,7 @@ if has('vim_starting')
     filetype indent off
     execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
 endif
-call neobundle#rc(expand('~/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'Shougo/neobundle.vim'
@@ -46,3 +46,4 @@ NeoBundleLazy 'ujihisa/neco-ghc', {'autoload' : {'filetypes' : 'haskell'}}
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload' : {'filetypes' : 'javascript'}}
 NeoBundleLazy 'kchmck/vim-coffee-script', {'autoload' : {'filetypes' : ['coffee']}}
 NeoBundleLazy 'derekwyatt/vim-scala', {'autoload' : {'filetypes' : 'scala'}}
+call neobundle#end()
