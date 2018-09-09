@@ -2,13 +2,6 @@
 " NeoBundleプラグインの管理
 "###############################################################
 
-"go関連のプラグイン{
-if $GOROOT!=''
-  set runtimepath+=$GOROOT/misc/vim
-  exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
-endif
-"}
-
 "Vi互換モードをオフ(Vim拡張機能を有効)"
 set nocompatible
 if has('vim_starting')
@@ -33,17 +26,13 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'itchyny/calendar.vim'
-NeoBundle 'jmcantrell/vim-virtualenv'
 
 filetype plugin on
 filetype indent on
 
-NeoBundleLazy 'davidhalter/jedi-vim', {'autoload' : {'filetypes' : ['python', 'python3']}}
-NeoBundleLazy 'vim-scripts/ruby-matchit', {'autoload' : {'filetypes' : 'ruby'}}
 NeoBundleLazy 'dag/vim2hs', {'autoload' : {'filetypes' : 'haskell'}}
 NeoBundleLazy 'eagletmt/ghcmod-vim', {'autoload' : {'filetypes' : 'haskell'}}
 NeoBundleLazy 'ujihisa/neco-ghc', {'autoload' : {'filetypes' : 'haskell'}}
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload' : {'filetypes' : 'javascript'}}
-NeoBundleLazy 'kchmck/vim-coffee-script', {'autoload' : {'filetypes' : ['coffee']}}
 NeoBundleLazy 'derekwyatt/vim-scala', {'autoload' : {'filetypes' : 'scala'}}
 call neobundle#end()
